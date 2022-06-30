@@ -1,0 +1,62 @@
+/* interactive 詳細資訊視窗設定 */
+.tooltip {
+    /* 加個背景 */
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    /*避免出現連結或其他預設行為*/
+    background: #eee;
+    max-width: 200px;
+}
+
+.tip-header {
+    border-bottom: 2px solid white;
+    /* 畫個格線 */
+    padding: 0.9rem 1rem;
+}
+
+.tip-body {
+    padding: 0.2rem 0;
+    /* 拉開一點點空間 */
+}
+
+h3,
+h4 {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+}
+
+h4 {
+    font-weight: normal;
+    /* 字弄細一點 */
+}
+
+.tip-info {
+    margin: 0;
+    padding: 0.3rem 1em;
+    font-size: 0.8em;
+}
+
+/*偶數元素設定不同背景樣式*/
+.tip-info:nth-of-type(even) {
+    /* 偶數格有不同的顏色 */
+    background: #e0e0e0;
+}
+
+svg {
+    border: 1px solid #ccc;
+}
+
+.axis .domain {
+    stroke: none;
+}
+
+.x line {
+    stroke: white;
+}
+
+.button {
+    padding: 1rem 1rem;
+    margin: 1rem 0rem 1rem 0.5rem;
+}

@@ -1,0 +1,64 @@
+svg {
+    border: 1px solid #ccc;
+}
+
+.axis .domain {
+    /*軸線的顏色*/
+    stroke: #bbb;
+}
+
+.axis .tick line {
+    stroke: #bbb;
+    stroke-width: 0.5;
+    stroke-dasharray: 4, 2;
+}
+
+svg, .selected-container {
+    border: 1px solid #ccc;
+}
+
+body {
+    display: flex;
+}
+
+.selected-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.selected-header {
+    background: #f0f0f0;
+    color: #777;
+    padding: 0.5rem 2rem;
+    /* 水平跟垂直 */
+    text-align: right;
+    /* 對齊 */
+}
+
+.selected-body {
+    overflow: auto;
+    font-size: 0.8em;
+    /* 0.8相對它的上層元件 */
+    cursor: default;
+}
+
+.selected-title {
+    font-weight: bold;
+}
+
+.selected-element {
+    margin: 0.5em;
+    padding: 0.5em;
+    transition: background-color 200ms ease;
+}
+
+.selected-element:hover {
+    /* selected-element在hover上去後有一點轉場的效果 */
+    background-color: #f0f0f0;
+}
+
+.button {
+    padding: 1rem 1rem;
+    margin: 1rem 0rem 1rem 0.5rem;
+}

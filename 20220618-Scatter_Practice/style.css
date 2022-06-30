@@ -1,0 +1,19 @@
+svg {
+    border: 1px solid #ccc;
+}
+
+.axis .domain {
+    /*軸線的顏色*/
+    stroke: #bbb;
+}
+
+.axis .tick line {
+    stroke: #bbb;
+    stroke-width: 0.5;
+    stroke-dasharray: 4, 2;
+}
+
+.button {
+    padding: 1rem 1rem;
+    margin: 1rem 0rem 1rem 0.5rem;
+}

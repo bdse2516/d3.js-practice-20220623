@@ -1,0 +1,16 @@
+svg {
+    border: 1px solid #ccc;
+}
+
+.axis .domain {
+    stroke: none;
+}
+
+.x line {
+    stroke: white;
+}
+
+.button {
+    padding: 1rem 1rem;
+    margin: 1rem 0rem 1rem 0.5rem;
+}
